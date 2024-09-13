@@ -5,27 +5,30 @@
 using namespace std;
 
 int main() {
+
 	double salary;
 	double tax;
+
 	cout << "Введіть розмір зарплатні: " << endl;
 	cin >> salary;
 
-	if (salary <= 15000)
+	if (salary <= 15000) 
 	{
 		tax = salary * 0.195;
 	}
-	else if (salary > 15000 && salary <= 22500) {
+	else if (salary > 15000 && salary <= 22500) 
+	{
 		tax = salary * 0.225;
 	}
-	else if (salary > 22500 && salary <= 35000) {
+	else if (salary > 22500 && salary <= 35000) 
+	{
 		tax = salary * 0.235;
 	}
-	else if (salary > 35000) {
+	else if (salary > 35000) 
+	{
 		tax = salary * 0.25;
 	}
-	else
-	{
-		cout << "Виникла помилка. Перевірте вхідні дані.";
-	}
+	else cout << "Виникла помилка. Перевірте вхідні дані.";
+
 	cout << "Податок становить: " << tax << endl;
 }
